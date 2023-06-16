@@ -6,10 +6,10 @@ export default function Header(){
             <h1>RE</h1>
             <div className='list-container'>
                 <ul>
-                    <li><span>&lt;a</span><a href='#'> About <span>/&gt;</span></a></li>
-                    <li><span>&lt;a</span><a href='#'>Experience<span>/&gt;</span></a></li>
-                    <li><span>&lt;a</span><a href='#'>Projects <span>/&gt;</span></a></li>
-                    <li><span>&lt;a</span><a href='#'>Contact <span>/&gt;</span></a></li>
+                    <li><span className='nav-span'>&lt;a</span><a href='#'> About <span className='nav-span'>/&gt;</span></a></li>
+                    <li><span className='nav-span'>&lt;a</span><a href='#'>Experience<span className='nav-span'>/&gt;</span></a></li>
+                    <li><span className='nav-span'>&lt;a</span><a href='#'>Projects <span className='nav-span'>/&gt;</span></a></li>
+                    <li><span className='nav-span'>&lt;a</span><a href='#'>Contact <span className='nav-span'>/&gt;</span></a></li>
                     <button type='button'>Resume</button>
                 </ul>
             </div>

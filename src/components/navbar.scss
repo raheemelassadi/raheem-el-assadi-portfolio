@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Mr+Dafoe&family=Questrial&display=swap');
 
 * {
     padding: 0;
@@ -11,6 +10,7 @@ body {
 }
 
 .navbar {
+    min-height: 6rem;
     color: white;
     padding: 2rem;
     display: flex;
@@ -20,62 +20,63 @@ body {
     user-select: none;
     margin: 0 3%;
 
-        span {
-            opacity: 20%;
-            padding: 0 5px;
-        }
-
-        
+    .nav-span {
+        opacity: 20%;
+        padding: 0 5px;
+    }
 
 
-        h1 {
-            font-family: 'Mr Dafoe', cursive;
-            font-size: 3.5rem;
-            user-select: none;
-            cursor: pointer;
-            color: #FEFAE0;
-        }
+    h1 {
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 3.5rem;
+        user-select: none;
+        cursor: pointer;
+        color: #FEFAE0;
+    }
 
-        ul {
-            display: flex;
-            font-size: .9rem;
-            
-            li {
-                margin: 20px;
-                list-style-type: none;
-                
-                a {
-                    color: #FEFAE0;
+    ul {
+        display: flex;
+        font-size: .9rem;
 
-                        &:visited, &:active, &:focus, &:link {
-                            text-decoration: none;
-                        }
-                }
-        }
+        li {
+            margin: 20px;
+            list-style-type: none;
 
-            button {
-                font-family: 'Questrial', sans-serif;
-                align-self: center;
-                appearance: none;
-                outline: none;
-                border: 1px solid #FEFAE0;
+            a {
                 color: #FEFAE0;
-                background-color: transparent;
-                border-radius: 5px;
-                height: 50%;
-                font-size: 1rem;
-                padding: 10px 16px;
-                cursor: pointer;
 
-                    &:hover {
-                        background-color: rgba(254, 250, 224, .2)	;
-                    }
+                &:visited,
+                &:active,
+                &:focus,
+                &:link {
+                    text-decoration: none;
+                }
             }
         }
+
+        button {
+            font-family: 'Questrial', sans-serif;
+            align-self: center;
+            appearance: none;
+            outline: none;
+            border: 1px solid #FEFAE0;
+            color: #FEFAE0;
+            background-color: transparent;
+            border-radius: 5px;
+            height: 50%;
+            font-size: 1rem;
+            padding: 10px 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(254, 250, 224, .2);
+            }
+        }
+    }
 }
 
 @media (max-width: 861px) {
-    .navbar{
+    .navbar {
         h1 {
             position: fixed;
             top: 40px;
@@ -89,10 +90,10 @@ body {
         }
 
         ul {
-            display: flex;
+            display: none;
             flex-direction: column;
             position: absolute;
             right: 10px;
         }
-    }           
+    }
 }
