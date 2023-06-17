@@ -9,7 +9,9 @@
 }
 
 
-
+* {
+  user-select: none;
+}
 
 .right {
   display: flex;
@@ -33,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.2);
 
 
   .gg-chevron-down-o {
@@ -43,7 +44,6 @@
     position: fixed;
     bottom: 120px;
     animation: bounce 2s infinite;
-    font-size: 100px;
   }
 }
 
