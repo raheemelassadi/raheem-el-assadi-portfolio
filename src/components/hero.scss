@@ -1,21 +1,18 @@
-:root {
-  --background: #000;
-  --color: #FEFAE0;
-}
-
-html, body {
-  font-family: 'Questrial', sans-serif;
-}
 
 .main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #FEFAE0;
   font-family: 'Questrial', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
 }
 
-
+.right {
+  display: flex;
+  justify-content: right;
+}
 
 .container {
   color: var(--color);
@@ -29,12 +26,26 @@ html, body {
   font-size: 4rem;
 }
 
-.right {
-  justify-self: right;
-  text-align: right;
-  width: 100%;
+.arrow {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 10px;
+
+
+
+  .gg-push-down {
+    display: block;
+    color: #FEFAE0;
+    cursor: pointer;
+  }
 }
 
+
+
+
+// styling for glitch effect
 .stack {
   display: grid;
   grid-template-columns: 1fr;
