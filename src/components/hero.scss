@@ -13,6 +13,10 @@
 }
 
 
+* {
+  user-select: none;
+}
+
 .right {
   display: flex;
   justify-content: right;
@@ -44,7 +48,6 @@
     position: fixed;
     bottom: 120px;
     animation: bounce 2s infinite;
-    font-size: 100px;
   }
 }
 
