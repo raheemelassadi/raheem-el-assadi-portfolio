@@ -9,7 +9,23 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+
+
 .navbar {
+
+    //for later
+    // opacity: 1;
+    // animation: fadeOutNavbar 0.5s ease-in-out forwards;
+
+    // @keyframes fadeOutNavbar {
+    //     from {
+    //       opacity: 1;
+    //     }
+    //     to {
+    //       opacity: 0;
+    //     }
+    //   }
+
     min-height: 6rem;
     color: white;
     padding: 2rem;
@@ -19,11 +35,11 @@ body {
     align-items: center;
     user-select: none;
     margin: 0 3%;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        z-index: 999;
+        z-index: 9999;
       
 
     .nav-span {
@@ -84,7 +100,7 @@ body {
 @media (max-width: 861px) {
     .navbar {
         h1 {
-            position: fixed;
+            position: absolute;
             top: 40px;
             bottom: 80px;
             justify-content: flex-start;

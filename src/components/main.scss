@@ -1,6 +1,40 @@
-.main {
+.about {
     height: 100vh;
     color: #FEFAE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     font-family: 'Questrial', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto; /* Use 'auto' to enable scrolling when needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background color */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow to enhance the glass effect */
 }
 
+.about-p {
+    line-height: 1.8;
+    padding: 2.5rem 5rem;
+    border-radius: 50px;
+    max-height: calc(100% - 5rem); /* Adjust the max-height to leave space for padding */
+    overflow: auto; /* Enable scrolling when the content exceeds max-height */
+}
+
+.keyword {
+    color: #64614B
+}
+
+@media (max-width: 861px) {
+
+    .about {
+        max-width: 100%;
+    }
+
+    .about-p {
+        border-radius: 0;
+        font-size: .87rem;
+        padding: 1.7rem 4rem;
+    }
+  }
