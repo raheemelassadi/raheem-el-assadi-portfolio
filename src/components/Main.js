@@ -2,6 +2,7 @@ import './main.scss'
 
 const Main = () => {
     return (
+        <>
         <div className='about'>
             <p className='about-p'>
                 Hi, I'm <span className='keyword'>Raheem El-Assadi</span>, a <span className='keyword'>passionate</span> and experienced web developer. I specialize in creating user-friendly websites and applications that combine aesthetics with functionality.
@@ -10,6 +11,11 @@ const Main = () => {
                 Explore my portfolio to see my work firsthand. From e-commerce platforms to interactive web applications, each project showcases my creativity and attention to detail.
                 I'm a <span className='keyword'>collaborative team player</span> with excellent communication skills. I understand the importance of working closely with clients, designers, developers, and friends to achieve outstanding results.</p>
         </div>
+        <div className='icon'>
+        <a href={'https://www.linkedin.com/in/raheemelassadi/'} target='blank'><i className="fa fa-linkedin-square"></i></a>
+        <a href={'https://github.com/raheemelassadi'} target='blank'><i class="fa fa-github" aria-hidden="true"></i></a>  
+        </div>
+        </>
     )
 }
 

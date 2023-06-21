@@ -9,9 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: auto; /* Use 'auto' to enable scrolling when needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background color */
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow to enhance the glass effect */
+
 }
 
 .about-p {
@@ -20,10 +18,32 @@
     border-radius: 50px;
     max-height: calc(100% - 5rem); /* Adjust the max-height to leave space for padding */
     overflow: auto; /* Enable scrolling when the content exceeds max-height */
+    position: absolute;
+    right: 300px;
+}
+
+.icon {
+    position: absolute;
+    color: rgb(175, 175, 45);
+    right: 170px;
+    top: 1200px;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: rgb(175, 175, 45);
+}
+
+i {
+    cursor: pointer;
 }
 
 .keyword {
-    color: #64614B
+    color: rgb(175, 175, 45)
 }
 
 @media (max-width: 861px) {
@@ -36,5 +56,16 @@
         border-radius: 0;
         font-size: .87rem;
         padding: 1.7rem 4rem;
+        position: static;
+    }
+
+    .icon {
+        margin-bottom: 30rem;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
     }
   }
