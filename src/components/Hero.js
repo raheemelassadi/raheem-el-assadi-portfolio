@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
       </div>      
     </div>
-    <p className='arrow'><i class="gg-chevron-down-o"></i></p>
+    <p className='arrow'><a href={'/About.js'}><i class="gg-chevron-down-o"></i></a></p>
     </>
   )
 }

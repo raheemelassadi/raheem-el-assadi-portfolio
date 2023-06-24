@@ -31,6 +31,17 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+
+    
+
+    i {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 a:active, a:visited, a:focus {
@@ -54,9 +65,13 @@ i {
 
     .about-p {
         border-radius: 0;
-        font-size: .87rem;
+        font-size: 1.2rem;
         padding: 1.7rem 4rem;
         position: static;
+    }
+
+    .hidden {
+        display: none;
     }
 
     .icon {
