@@ -8,20 +8,20 @@
 }
 
 form {
-    width: 30%;
+    width: 27rem;
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
+    padding-left: 10rem;
 
     label {
         background-color: #FEFAE0;
         color: black;
-        padding: .5rem;
-        width: 20%;
+        padding: .3rem .5rem;
+        width: 7rem;
         text-align: center;
         border: none;
         outline: none;
-        margin-bottom: .3rem;
+        margin-bottom: .6rem;
     }
 
     input {
@@ -29,8 +29,7 @@ form {
         padding: 1rem;
         border: none;
         outline: none;
-        height: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         background-color: #FEFAE0;
 
     }
@@ -39,10 +38,14 @@ form {
         padding: 1rem; 
         caret-color: rgb(175, 175, 45);
         background-color: #FEFAE0;
+        resize: none;
+        font-size: 1.1rem;
+        overflow: scroll;
     }
 
-    button {
-        height: inherit;
+    input[type=submit] {
+        margin-top: 1rem;
+        cursor: pointer;
     }
 }
 
