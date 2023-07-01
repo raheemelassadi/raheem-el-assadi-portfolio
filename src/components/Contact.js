@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.scss'
+import EarthGlobe from './Earth';
 
 const Contact = () => {
     const form = useRef();
@@ -30,6 +31,7 @@ const Contact = () => {
                 <textarea name="message" aria-setsize={'500px'}/>
                 <input type="submit" value="Send" />
             </form>
+            <EarthGlobe />
         </div>
     )
 }
